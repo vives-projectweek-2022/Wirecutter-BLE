@@ -57,12 +57,6 @@ public:
     
 public:
 
-    uint8_t byte0;
-    uint8_t byte1;
-    uint8_t byte2;
-    uint8_t byte3;
-    uint8_t byte4;
-
     /**
      * This callback allows the LEDService to receive updates to the ledState Characteristic.
      *
@@ -72,15 +66,36 @@ public:
     {
         if (params.handle == _writable_characteristic->getValueHandle()) {
             printf("New characteristic value written: %x, %x, %x, %x, %x\r\n", params.data[0], params.data[1], params.data[2], params.data[3], params.data[4]);
-            byte0 = params.data[0];
-            byte1 = params.data[1];
-            byte2 = params.data[2];
-            byte3 = params.data[3];
-            byte4 = params.data[4];
+            left = params.data[0];
+            factor = params.data[1];
+            rest = params.data[2];
+            right = params.data[3];
+            amount = params.data[4];
         }
     }
 
+    uint8_t getLeft(void) {
+        return left;
+    }
+    uint8_t getFactor(void) {
+        return factor;
+    }
+    uint8_t getRest(void) {
+        return rest;
+    }
+    uint8_t getRight(void) {
+        return right;
+    }
+    uint8_t getAmount(void) {
+        return amount;
+    }
+
 private:
+    uint8_t left;
+    uint8_t factor;
+    uint8_t rest;
+    uint8_t right;
+    uint8_t amount;
     ReadWriteGattCharacteristic<uint32_t[2]> *_writable_characteristic = nullptr;
     uint32_t _characteristic_value[2] = {0,0};
 };
