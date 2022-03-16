@@ -1,3 +1,6 @@
+# Link to main repository
+[Main repo](https://github.com/vives-projectweek-2022/Automatic-Wire-Cutter)
+
 # Create a writable characteristic on GattServer
 
 This example creates a writable characteristic and notifies the user of any writes by printing to the serial.
