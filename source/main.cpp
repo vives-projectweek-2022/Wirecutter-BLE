@@ -105,10 +105,10 @@ int main()
     mbed_trace_init();
 
     BLE &ble = BLE::Instance();
+    GattServerDemo demo;
+    /*Make object instances*/
 
     printf("\r\nGattServer demo of a writable characteristic\r\n");
-
-    GattServerDemo demo;
 
     /* this process will handle basic setup and advertising for us */
     GattServerProcess ble_process(event_queue, ble);
