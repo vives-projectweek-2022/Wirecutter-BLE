@@ -65,12 +65,12 @@ public:
     virtual void onDataWritten(const GattWriteCallbackParams &params)
     {
         if (params.handle == _writable_characteristic->getValueHandle()) {
-            printf("New characteristic value written: %x, %x, %x, %x, %x\r\n", params.data[0], params.data[1], params.data[2], params.data[3], params.data[4]);
             left = params.data[0];
             factor = params.data[1];
             rest = params.data[2];
             right = params.data[3];
             amount = params.data[4];
+            printf("New characteristic value written: %x, %x, %x, %x, %x\r\n", left, factor, rest, right, amount);
         }
     }
 
@@ -90,12 +90,17 @@ public:
         return amount;
     }
 
+    bool hasValueBeenWritten(void) {
+        return valueWritten;
+    }
+
 private:
     uint8_t left;
     uint8_t factor;
     uint8_t rest;
     uint8_t right;
     uint8_t amount;
+    bool valueWritten = false;
     ReadWriteGattCharacteristic<uint32_t[2]> *_writable_characteristic = nullptr;
     uint32_t _characteristic_value[2] = {0,0};
 };

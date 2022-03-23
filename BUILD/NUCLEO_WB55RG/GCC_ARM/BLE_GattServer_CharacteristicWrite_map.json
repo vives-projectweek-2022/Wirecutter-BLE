@@ -2,7 +2,7 @@
     {
         "module": "[fill]",
         "size": {
-            ".text": 346,
+            ".text": 310,
             ".data": 7,
             ".bss": 66,
             ".text-delta": 0,
@@ -68,7 +68,7 @@
     {
         "module": "mbed-os\\cmsis",
         "size": {
-            ".text": 8750,
+            ".text": 8846,
             ".data": 168,
             ".bss": 6208,
             ".text-delta": 0,
@@ -79,7 +79,7 @@
     {
         "module": "mbed-os\\connectivity",
         "size": {
-            ".text": 84738,
+            ".text": 84726,
             ".data": 245,
             ".bss": 6772,
             ".text-delta": 0,
@@ -101,7 +101,7 @@
     {
         "module": "mbed-os\\events",
         "size": {
-            ".text": 1242,
+            ".text": 1282,
             ".data": 0,
             ".bss": 0,
             ".text-delta": 0,
@@ -123,7 +123,7 @@
     {
         "module": "mbed-os\\platform",
         "size": {
-            ".text": 5724,
+            ".text": 5728,
             ".data": 260,
             ".bss": 424,
             ".text-delta": 0,
@@ -134,7 +134,7 @@
     {
         "module": "mbed-os\\rtos",
         "size": {
-            ".text": 332,
+            ".text": 364,
             ".data": 0,
             ".bss": 8,
             ".text-delta": 0,
@@ -156,7 +156,7 @@
     {
         "module": "source\\main.o",
         "size": {
-            ".text": 1666,
+            ".text": 1670,
             ".data": 0,
             ".bss": 92,
             ".text-delta": 0,
@@ -168,7 +168,7 @@
         "summary": {
             "static_ram": 17120,
             "static_ram_delta": 0,
-            "total_flash": 127624,
+            "total_flash": 127752,
             "total_flash_delta": 0
         }
     }
