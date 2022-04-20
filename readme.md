@@ -22,3 +22,10 @@ Hardware requirements are in the [main readme](https://github.com/ARMmbed/mbed-o
 ## Building instructions
 
 Building instructions for all samples are in the [main readme](https://github.com/ARMmbed/mbed-os-example-ble/blob/master/README.md).
+
+# Important
+
+If the mbed-os or mbed-os-ble-utils folders are empty:
+
+delete mbed-os.lib, mbed-os-ble-utils.lib
+mbed deploy
