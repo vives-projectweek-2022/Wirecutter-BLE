@@ -301,8 +301,7 @@ BUILD\NUCLEO_WB55RG\GCC_ARM\source\main.o: source\main.cpp \
  mbed-os/platform/include/platform/ScopedRamExecutionLock.h \
  mbed-os/platform/include/platform/mbed_stats.h \
  mbed-os/platform/include/platform/Stream.h \
- mbed-os/platform/include/platform/FileLike.h source\wirecutter.h \
- source\steppermotor.h source\Servo.h source\ble_wirecutter.h \
+ mbed-os/platform/include/platform/FileLike.h source\ble_wirecutter.h \
  mbed-os/connectivity/FEATURE_BLE/include/ble/BLE.h \
  mbed-os/connectivity/FEATURE_BLE/include/ble/Gap.h \
  mbed-os/connectivity/FEATURE_BLE/include/ble/common/CallChainOfFunctionPointersWithContext.h \

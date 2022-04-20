@@ -2,10 +2,10 @@
     {
         "module": "[fill]",
         "size": {
-            ".text": 364,
+            ".text": 298,
             ".data": 7,
             ".bss": 62,
-            ".text-delta": -12,
+            ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
         }
@@ -13,7 +13,7 @@
     {
         "module": "[lib]\\c.a",
         "size": {
-            ".text": 8532,
+            ".text": 7644,
             ".data": 2108,
             ".bss": 58,
             ".text-delta": 0,
@@ -24,7 +24,7 @@
     {
         "module": "[lib]\\gcc.a",
         "size": {
-            ".text": 6912,
+            ".text": 932,
             ".data": 0,
             ".bss": 0,
             ".text-delta": 0,
@@ -44,22 +44,11 @@
         }
     },
     {
-        "module": "[lib]\\nosys.a",
-        "size": {
-            ".text": 32,
-            ".data": 0,
-            ".bss": 0,
-            ".text-delta": 0,
-            ".data-delta": 0,
-            ".bss-delta": 0
-        }
-    },
-    {
         "module": "[lib]\\stdc++.a",
         "size": {
-            ".text": 4912,
-            ".data": 8,
-            ".bss": 44,
+            ".text": 0,
+            ".data": 0,
+            ".bss": 0,
             ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
@@ -79,7 +68,7 @@
     {
         "module": "mbed-os\\cmsis",
         "size": {
-            ".text": 8846,
+            ".text": 8750,
             ".data": 168,
             ".bss": 6208,
             ".text-delta": 0,
@@ -101,7 +90,7 @@
     {
         "module": "mbed-os\\drivers",
         "size": {
-            ".text": 974,
+            ".text": 798,
             ".data": 0,
             ".bss": 0,
             ".text-delta": 0,
@@ -134,7 +123,7 @@
     {
         "module": "mbed-os\\platform",
         "size": {
-            ".text": 5752,
+            ".text": 5724,
             ".data": 260,
             ".bss": 424,
             ".text-delta": 0,
@@ -145,7 +134,7 @@
     {
         "module": "mbed-os\\rtos",
         "size": {
-            ".text": 364,
+            ".text": 332,
             ".data": 0,
             ".bss": 8,
             ".text-delta": 0,
@@ -156,20 +145,9 @@
     {
         "module": "mbed-os\\targets",
         "size": {
-            ".text": 13042,
+            ".text": 10878,
             ".data": 8,
-            ".bss": 618,
-            ".text-delta": 0,
-            ".data-delta": 0,
-            ".bss-delta": 0
-        }
-    },
-    {
-        "module": "source\\Servo.o",
-        "size": {
-            ".text": 350,
-            ".data": 0,
-            ".bss": 0,
+            ".bss": 542,
             ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
@@ -178,31 +156,9 @@
     {
         "module": "source\\main.o",
         "size": {
-            ".text": 1960,
+            ".text": 1842,
             ".data": 0,
-            ".bss": 280,
-            ".text-delta": 12,
-            ".data-delta": 0,
-            ".bss-delta": 0
-        }
-    },
-    {
-        "module": "source\\steppermotor.o",
-        "size": {
-            ".text": 122,
-            ".data": 0,
-            ".bss": 0,
-            ".text-delta": 0,
-            ".data-delta": 0,
-            ".bss-delta": 0
-        }
-    },
-    {
-        "module": "source\\wirecutter.o",
-        "size": {
-            ".text": 328,
-            ".data": 0,
-            ".bss": 0,
+            ".bss": 120,
             ".text-delta": 0,
             ".data-delta": 0,
             ".bss-delta": 0
@@ -210,9 +166,9 @@
     },
     {
         "summary": {
-            "static_ram": 17432,
+            "static_ram": 17144,
             "static_ram_delta": 0,
-            "total_flash": 143052,
+            "total_flash": 127752,
             "total_flash_delta": 0
         }
     }
